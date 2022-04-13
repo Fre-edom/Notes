@@ -15,3 +15,21 @@ question = input("What? about the numbers you say? ")
 print(question)
 print(float(no1) + float(no2) + float(no3))
 print ("Happy now, " + noun2 + " ?")
+--------------------------
+colours = ["blue", "black", "green", "red", "yellow", "purple", "magenta", "white", "green", "brown", "pink", "orange" ]
+names = ["kate", "mike", "john", "mary", "george"]
+colours.extend(names) # concats the lists
+names.append("mouse") # adds value mouse in the end of the list
+colours.insert(4,"bike") # inserts value on a specific place in the list ( the index comes first)
+colours.pop() # deletes last value
+print(len(colours)) # gives the amount of values in the list
+print(colours[1]) # gives the value in second place --indexing starts with 0
+print(colours[-4]) # gives value 4th from the end -- reverse indexing starts with -1
+print(colours[3:]) # gives all values from 4th place and after
+print(colours[3:8]) # gives all values from 4th to 7th place -- will not show the value in 9th place ( the last indicator)
+print(colours.index("mike")) # gives the index of the value -- what place is it in the list
+print(colours.count("mike")) # gives the number of times mike appears in the list
+colours.sort() # shorts in ascending order
+colours.reverse() # shorts in descending order
+random_names = colours.copy() # to copy all the values of the colours list into a new list just created, random_names
+print(colours)
