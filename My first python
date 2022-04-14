@@ -46,3 +46,13 @@ def say_hi():                 # This is a function that is called say_hi, everyt
     print("Hello there! ")     # part of the function and it is going to be executed when I ll call this function
     print("How are you? \n All good?") # same with abone + the \n is going to bring what comes after it in a different line
 say_hi()         #this is how we call the function
+
+def say_hello(name,my_name, age, my_age):   # here we gave parameters to the function
+    print("Hello " + name + " You are " + age + " years old")
+    print("My name is " + my_name + " and I am " + my_age + " years old!")
+    print("Nice to meet you " + name)
+say_hello( "Mike","Eleftheria","35","28")  # here we called the function and named the parameters
+
+2^3 #would be στον κύβο, 3 είναι η δύναμη
+
+----------------------------------------------------------------------------------------------
