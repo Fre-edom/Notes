@@ -1,3 +1,6 @@
+<https://www.youtube.com/watch?v=rfscVS0vtbw>
+
+
 noun1 = input (" Hey Max, Καλημέρα, Give me a noun you like: ")
 noun2 = input ( "Give me another noun, that you don't like: ")
 noun3 = input ("One more noun please: ")
@@ -33,3 +36,13 @@ colours.sort() # shorts in ascending order
 colours.reverse() # shorts in descending order
 random_names = colours.copy() # to copy all the values of the colours list into a new list just created, random_names
 print(colours)
+
+---------------------------
+
+coordinates = (0,2) # this is a tuple -- tuple cannot be modified
+coordninates_list = ( [12, 11], [11, 34], [56, 2]) # this is a tuple with lists inside it -- this tuple cannot be modifies as well
+
+def say_hi():                 # This is a function that is called say_hi, everything exactly under this function belongs to the function
+    print("Hello there! ")     # part of the function and it is going to be executed when I ll call this function
+    print("How are you? \n All good?") # same with abone + the \n is going to bring what comes after it in a different line
+say_hi()         #this is how we call the function
