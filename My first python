@@ -110,4 +110,32 @@ elif not(is_cute) and is_very_cute:     # not() and second elif!!
     print("Still cute for me! :) ")
 else:
     print("Oh.. no! You are still cute! :) ")
+    
+    
+ ---------------------------------------------------------------------------
+ # if statement with comparison operators
+
+def max_num(num1,num2,num3):
+    if num1 > num2 and num1 > num3:
+        return num1
+    elif num1 < num2 and num1 < num3:
+        return num3 or num2
+    elif num2 < num3:
+        return str(num3) + " " + "Freedom is smart!"
+    else:
+        return "freedom is stupid"
+print(max_num(300,12,513))
+
+soooo comparison operators are:
+
+==  for two values are equal
+!=  for two values are not equal
+=>   -//- equal or greater than
+=<   -//- equal or less then
+>       greater
+<       less
+
+-------------------------------------------------------------------------
+
+
 
