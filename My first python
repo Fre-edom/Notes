@@ -137,5 +137,37 @@ soooo comparison operators are:
 
 -------------------------------------------------------------------------
 
+max_num = input( "Which number is the greatest? :")
+answer = input ("Oh you wanna know? ")
+def function(num1, num2, num3):
+    if num1 > num2 and num1 > num3:
+        return num1
+    elif num1 < num2 and num1 < num3 and num2 < num3:
+        return num3
+    else:
+        return num2
 
+print("Here it is : ")
+print(function(20,40,100))
+
+----------------------------------------------------------------------------------------------
+
+# calculator with if
+
+num1 = float(input("Give me a number: "))
+op = input("What do you want me to do with the numbers: ")
+num2 = float(input("Give me the second number: "))
+
+if op == "+" :
+    print(num1 + num2)
+elif op == "-" :
+    print(num1 - num2)
+elif op == "/" :
+    print(num1 / num2)
+elif op == "* ":
+    print(num1 * num2)
+elif op == "%" :                     # for modulo
+    print(num1 % num2)
+else:
+    print("Give me a valid operator please!")
 
