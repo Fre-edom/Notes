@@ -56,3 +56,58 @@ say_hello( "Mike","Eleftheria","35","28")  # here we called the function and nam
 2^3 #would be στον κύβο, 3 είναι η δύναμη
 
 ----------------------------------------------------------------------------------------------
+
+
+def multiply(a, b):   # created a function
+    a*b                 #stated what the function should do
+    return a*b           # said to the function that we actully wanted to return something 
+result = multiply (12,12)   # set parameters
+print(result)              # called the function
+
+-----------------------------------
+is_cute = True     # we set a condition
+if is_cute:          # if statement 
+    print("You are cute! :)")     # code for if statement
+else:                                # if statement is False, then...
+    print("Oh.. no! You are still cute! :) ")  # code for if statment then..,
+  
+  
+  we can also have:
+  
+  is_cute = True
+is_very_cute = True
+if is_cute or is_very_cute:       # contition 1, or condition 2
+    print("You are cutie cute cute! :)")    # if either or both conditions are met, this statement gets executed
+else:
+    print("Oh.. no! You are still cute! :) ") # if neither condition is true, this statement is executed
+    
+    
+    # likewise, we can use and , in this case for the first statement to be executed both condition must be True 
+    # with the and operator, the else will be executed if either or both of the conditions are false 
+    
+ # to add one more condition we are going to use elif (which is the else if)
+ so we can also use the and not()
+ and it is going to go like that:
+ 
+ is_cute = True
+is_very_cute = True
+if is_cute or is_very_cute:
+    print("You are cutie cute cute! :)")
+elif is_cute and not(is_very_cute):        # notice that the  : is going after the whole statement!! 
+    print("Still cute for me! :) ")
+else:
+    print("Oh.. no! You are still cute! :) ")
+    
+    
+ # and we can use as many elif as we want aaaaaand we can use not() alone like that:
+ is_cute = True
+is_very_cute = True
+if is_cute or is_very_cute:
+    print("You are cutie cute cute! :)")
+elif is_cute and not(is_very_cute):
+    print("Still cute for me! :) ")
+elif not(is_cute) and is_very_cute:     # not() and second elif!!
+    print("Still cute for me! :) ")
+else:
+    print("Oh.. no! You are still cute! :) ")
+
