@@ -77,6 +77,24 @@ print(result)                                                # called the functi
 --------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
 
 
+
+friends = [ "maki", "paki", "taki", "saki"]          # this is a list
+len(friends)                                         # and with len() we can see the number of values in the list.. so in this case it would be 4
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
+
+
 is_cute = True                                                                    # we set a condition
 if is_cute:                                                                     # if statement 
     print("You are cute! :)")                                                  # code for if statement
@@ -324,27 +342,73 @@ while ans != correct_answer:
 
 
 
+----------------------------------------------------------# and some more changes---------------------------------------------------------------------------------
+
+question = input("WHY ARE YOU LITTERING? \n 1) I am stupid \n 2) My mummy still cleaning after me \n 3) Don't care \n "
+                 "4) All of the above \n ")
+correct_answer = "I do not"
+ans = " "
+ans1 = "1"
+ans2 = "2"
+ans3 = "3"
+ans4 = "4"
+
+while ans != correct_answer:
+    ans = question
+    if ans == ans1:
+        print(" You are! Please stop littering!")
+        break
+    elif ans == ans2:
+        print("That's obvious but please stop littering!")
+        break
+    elif ans == ans3:
+        print("I do! So, please stop littering! ")
+        break
+    elif ans == ans4:
+        print("STOP LITTERING! ")
+        break
+    elif ans == correct_answer:
+        print("I am proud of you! \nThat's awesome")
+        break
+    else:
+        print("Then WTF? STOP littering!")
+        break
+
+
+-----------------------------------------------------------# for loop ---------------------------------------------------------------------------------------------
+
+for letter in "Giraffe Academy":                         # the word letter could actually be anything with the same result apparently, so it is a random word
+    print(letter)                    
+
+
+for anything in range(35):                                 # same with range... but it will return 0 through 34
+     print(anything )
+
+
+for anything in range(35):                                 # will return 1 through 35 ( coz it will be the previous +1) 
+     print(anything + 1)                        
+
+
+
+for anything in range(35, 40):                               # will return 35 through 39 
+     print(anything )
+
+
+
+friends = ["tara", "tira", "mara", "moira", "mo"]            # will return the length of the range
+for anything in range(len(friends)):
+     print(anything)
+     
+    
+    
+friends = ["tara", "tira", "mara", "moira", "mo"]            # will return the items of the list 
+for anything in range(len(friends)):
+     print(friends[anything])
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---------------------------------------------------# exponent function -----------------------------------------------------------------------------------------------
 
 
 
