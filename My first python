@@ -254,7 +254,9 @@ print("That's awesome!")
 
 
 
--------------------------first game solved!!!!! :) ---------------------------------------------------------------
+--------------------------------------------------------------------first game solved!!!!! :) ---------------------------------------------------------------------
+
+
 question = input("WHY ARE YOU LITTERING? ")
 correct_answer = "I do not"
 ans = " "
@@ -286,8 +288,38 @@ while ans != correct_answer:
 
 
 
+--------------------------------------------------------------------first game improved !!!!! :) ---------------------------------------------------------------------
 
 
+question = input("WHY ARE YOU LITTERING? \n 1) I am stupid \n 2) My mummy still cleaning after me \n 3) Don't care \n "
+                 "4) All of the above \n ")
+correct_answer = "I do not"
+ans = " "
+ans1 = "I am stupid"
+ans2 = "My mummy still cleaning after me"
+ans3 = "Don't care"
+ans4 = "All of the above"
+
+while ans != correct_answer:
+    ans = question
+    if ans == ans1:
+        print(" You are stupid! Please stop littering!")
+        break
+    elif ans == ans2:
+        print("You are so stupid! Please stop littering!")
+        break
+    elif ans == ans3:
+        print("You are so so  stupid! Please stop littering! ")
+        break
+    elif ans == ans4:
+        print("You are so so so stupid! Please stop littering! ")
+        break
+    elif ans == correct_answer:
+        print("I am proud of you! \nThat's awesome")
+        break
+    else:
+        print("Then WTF? STOP littering!")
+        break
 
 
 
