@@ -1,5 +1,7 @@
-  |                <https://www.youtube.com/watch?v=rfscVS0vtbw>                     |
-  |----------------------------------------------------------------------------------|
+                                                               Python - My notes and mistakes 
+                                       |                                                                                  |
+                                       |                 <https://www.youtube.com/watch?v=rfscVS0vtbw>                    |
+                                       |----------------------------------------------------------------------------------|
   
 
 noun1 = input (" Hey Max, Καλημέρα, Give me a noun you like: ")
@@ -19,7 +21,13 @@ question = input("What? about the numbers you say? ")
 print(question)
 print(float(no1) + float(no2) + float(no3))
 print ("Happy now, " + noun2 + " ?")
---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------# Notes ---------------------------------------------------------------------------------------------------
+
+
+
 colours = ["blue", "black", "green", "red", "yellow", "purple", "magenta", "white", "green", "brown", "pink", "orange" ]
 names = ["kate", "mike", "john", "mary", "george"]
 colours.extend(names)                                          # concats the lists
@@ -38,7 +46,7 @@ colours.reverse()                                      # shorts in descending or
 random_names = colours.copy()                          # to copy all the values of the colours list into a new list just created, random_names
 print(colours)
 
------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------# Notes ----------------------------------------------------------------------------------------------------
 
 coordinates = (0,2)                                        # this is a tuple -- tuple cannot be modified
 coordninates_list = ( [12, 11], [11, 34], [56, 2])                     # this is a tuple with lists inside it -- this tuple cannot be modifies as well
@@ -55,8 +63,9 @@ def say_hello(name,my_name, age, my_age):                                  # her
 say_hello( "Mike","Eleftheria","35","28")                                  # here we called the function and named the parameters
 
                           2^3       #would be στον κύβο, 3 είναι η δύναμη
+                          
 
-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------# Notes -------------------------------------------------------------------------------------------
 
 
 def multiply(a, b):                                              # created a function
@@ -65,7 +74,9 @@ def multiply(a, b):                                              # created a fun
 result = multiply (12,12)                                    # set parameters
 print(result)                                                # called the function
 
---------------------------------------------------------------------
+--------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
+
+
 is_cute = True                                                                    # we set a condition
 if is_cute:                                                                     # if statement 
     print("You are cute! :)")                                                  # code for if statement
@@ -113,8 +124,8 @@ else:
     print("Oh.. no! You are still cute! :) ")
     
     
- ---------------------------------------------------------------------------
-                                                                 # if statement with comparison operators
+ -------------------------------------------------------------# if statement with comparison operators-------------------------------------------------------------
+                                                               
                                                                  
 
 def max_num(num1,num2,num3):
@@ -137,7 +148,7 @@ soooo comparison operators are:
 >       greater
 <       less
 
--------------------------------------------------------------------------
+--------------------------------------------------# Notes -----------------------------------------------------------------------------------------------------
 
 max_num = input( "Which number is the greatest? :")
 answer = input ("Oh you wanna know? ")
@@ -152,9 +163,9 @@ def function(num1, num2, num3):
 print("Here it is : ")
 print(function(20,40,100))
 
-----------------------------------------------------------------------------------------------
+--------------------------------------------------  # calculator with if---------------------------------------------------------------------------------------
 
-                    # calculator with if
+                  
                     
 
 num1 = float(input("Give me a number: "))
@@ -174,11 +185,11 @@ elif op == "%" :                     # for modulo
 else:
     print("Give me a valid operator please!")
     
-    --------------------------------------------------------------------------------------------
+    ------------------------------------------------------ #dictionary---------------------------------------------------------------------------------
     
   
   
-  days = { "Mon" : "Monday",                     #dictionary
+  days = { "Mon" : "Monday",                    
          "Tue" : "Tuesday",
          "Wen" : "Wednesday",
          "Thu" : "Thursday",
@@ -187,4 +198,130 @@ else:
          "Sun": "Sunday"
          }
 print(days.get("Mon", "Not applicable "))          # get disctionary and n/a key for function get 
+
+------------------------------------------------------------# while loop------------------------------------------------------------------------------------------
+
+                              
+i = 1
+while i <= 10:
+     print(i)
+     i = i + 1     # or we can use i += 1 as a shortcut
+
+print(" Done with loop! ")
+
+
+----------------------------------------------------------# guessing game 1-------------------------------------------------------------------------------
+
+secret_word = "candy"
+guess = ""
+while guess != secret_word :
+    guess = input("Make a guess! : )")
+
+print("You got it!")
+
+
+---------------------------------------------------------------   # first game --- still broken :??------------------------------------------------------------------------
+                            
+question = input("WHY ARE YOU LITTERING? ")
+correct_answer = "I do not"
+ans = " "
+ans1 = "I am stupid"
+ans2 = "My mummy still cleaning after me"
+ans3 = "Don't care"
+ans4 = "All of the above"
+
+while question != correct_answer:
+     if question == ans1:
+         print(" You are stupid")
+         break
+     elif question == ans2:
+         print("You are so stupid!")
+         break
+     elif question == ans3:
+          print("You are so so  stupid!")
+          break
+     elif question == ans4:
+          print("You are so so so stupid")
+          break
+     elif question == correct_answer:
+         print("I am proud of you!")
+         break
+     else:
+        print("Then WTF?")
+
+print("That's awesome!")
+
+
+
+
+-------------------------first game solved!!!!! :) ---------------------------------------------------------------
+question = input("WHY ARE YOU LITTERING? ")
+correct_answer = "I do not"
+ans = " "
+ans1 = "I am stupid"
+ans2 = "My mummy still cleaning after me"
+ans3 = "Don't care"
+ans4 = "All of the above"
+
+while ans != correct_answer:
+    ans = question
+    if ans == ans1:
+         print(" You are stupid")
+         break
+    elif ans == ans2:
+         print("You are so stupid!")
+         break
+    elif ans == ans3:
+          print("You are so so  stupid!")
+          break
+    elif ans == ans4:
+          print("You are so so so stupid")
+          break
+    elif ans == correct_answer:
+         print("I am proud of you! \n That's awesome")
+         break
+    else:
+        print("Then WTF?")
+        break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
