@@ -778,24 +778,41 @@ run_test(questions)
                                                                                                                                                                                                   
 -------------------------------------------------------------------# Object Functions ---------------------------------------------------------------------------------------------------
                                                                                                                                                                                                   
-                                                                                                                                                                                                  
+                                              # class function is actually a function that we can use inside a class and it can modify the items/objects
+                                                 of that class, or give us specific information regarding these objects 
                                                                                                                                                                                                  
                                                                                                                                                                                                  
-                                                                                                                                                                                                 
+class student:
+    def __int__(self, name, gpa):              # here we created a class for students
+        self.name = name
+        self.gpa = gpa
+        
+    def on_honor_roll(self):
+        if self.gpa >= 3.5:          # here we define whether the sudent is on honor roll
+            return True                # so if the students qpa is more than 3.5, it will return True, otherwise it will return False
+        else:
+            return False                                                                                                                                                                                                
                                                                                                                                                                                                  
                                                                                                                                                                                                  
 
 
+-------------------------------------------------------------------# Inheritance ---------------------------------------------------------------------------------------------------
 
-                                                                                                                                                                     
+                                            # Inheritance basically is where we can define attributes and functions inside of a class
+                                              and then create another class and inherite all of these attributes 
+                                                                                                                                                                                                  
+                          # in order to do that we need to 1) import the class that we want to inherate
+                          
+ import tade_class from tade_class
+                                                                                                                                                                                                  
+                           # and then when we create the new class, we want to include the class that we want to inherate:
+                           
+                           
+class Questions(my_first_questions):                                                                                                                                                                                                  
                                                                                                                                                                                                   
                                                                                                                                                                                                   
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
+                              # if there is a function inside the original class that we want to have in changed in the new class
+                                we can override it, by creating a new function, but with the same name - that way we override the function that we inherated
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
