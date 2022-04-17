@@ -411,13 +411,19 @@ for anything in range(len(friends)):
 ---------------------------------------------------# exponent function -----------------------------------------------------------------------------------------------
 
 
+print(2**5)                      # to cube a number 
 
 
 
+def raise_to_power (base_num, pow_num):              # we create a function
+     result = 1
+     for index in range(pow_num):                    # and then a for loop
+          result = result * pow_num
+     return result
+     
+print(raise_to_power(4,6))                        # and in the print we specifie which numbers 
 
 
-
-
-
+----------------------------------------------------------
 
 
