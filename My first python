@@ -2,7 +2,11 @@
                                        |                                                                                  |
                                        |                 <https://www.youtube.com/watch?v=rfscVS0vtbw>                    |
                                        |----------------------------------------------------------------------------------|
-  
+
+
+
+------------------------------------------------------------------------# Notes ---------------------------------------------------------------------------------------------------
+
 
 noun1 = input (" Hey Max, Καλημέρα, Give me a noun you like: ")
 noun2 = input ( "Give me another noun, that you don't like: ")
@@ -24,7 +28,7 @@ print ("Happy now, " + noun2 + " ?")
 
 
 
-------------------------------------------------------------# Notes ---------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------# Notes ---------------------------------------------------------------------------------------------------
 
 
 
@@ -46,7 +50,7 @@ colours.reverse()                                      # shorts in descending or
 random_names = colours.copy()                          # to copy all the values of the colours list into a new list just created, random_names
 print(colours)
 
----------------------------------------------------------------# Notes ----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------# Notes ----------------------------------------------------------------------------------------------------
 
 coordinates = (0,2)                                        # this is a tuple -- tuple cannot be modified
 coordninates_list = ( [12, 11], [11, 34], [56, 2])                     # this is a tuple with lists inside it -- this tuple cannot be modifies as well
@@ -65,7 +69,7 @@ say_hello( "Mike","Eleftheria","35","28")                                  # her
                           2^3       #would be στον κύβο, 3 είναι η δύναμη
                           
 
------------------------------------------------------------------# Notes -------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------# Notes -------------------------------------------------------------------------------------------
 
 
 def multiply(a, b):                                              # created a function
@@ -74,7 +78,7 @@ def multiply(a, b):                                              # created a fun
 result = multiply (12,12)                                    # set parameters
 print(result)                                                # called the function
 
---------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
 
 
 
@@ -92,7 +96,7 @@ len(friends)                                         # and with len() we can see
 
 
 
---------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------# Notes ------------------------------------------------------------------------------------------
 
 
 is_cute = True                                                                    # we set a condition
@@ -142,7 +146,7 @@ else:
     print("Oh.. no! You are still cute! :) ")
     
     
- -------------------------------------------------------------# if statement with comparison operators-------------------------------------------------------------
+ ---------------------------------------------------------------# if statement with comparison operators-------------------------------------------------------------
                                                                
                                                                  
 
@@ -166,7 +170,7 @@ soooo comparison operators are:
 >       greater
 <       less
 
---------------------------------------------------# Notes -----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------# Notes -----------------------------------------------------------------------------------------------------
 
 max_num = input( "Which number is the greatest? :")
 answer = input ("Oh you wanna know? ")
@@ -181,7 +185,7 @@ def function(num1, num2, num3):
 print("Here it is : ")
 print(function(20,40,100))
 
---------------------------------------------------  # calculator with if---------------------------------------------------------------------------------------
+-----------------------------------------------------------------------  # calculator with if---------------------------------------------------------------------------------------
 
                   
                     
@@ -203,7 +207,7 @@ elif op == "%" :                     # for modulo
 else:
     print("Give me a valid operator please!")
     
-    ------------------------------------------------------ #dictionary---------------------------------------------------------------------------------
+    ------------------------------------------------------------------------ #dictionary---------------------------------------------------------------------------------
     
   
   
@@ -217,7 +221,7 @@ else:
          }
 print(days.get("Mon", "Not applicable "))          # get disctionary and n/a key for function get 
 
-------------------------------------------------------------# while loop------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------# while loop------------------------------------------------------------------------------------------
 
                               
 i = 1
@@ -228,7 +232,7 @@ while i <= 10:
 print(" Done with loop! ")
 
 
-----------------------------------------------------------# guessing game 1-------------------------------------------------------------------------------
+------------------------------------------------------------------------------# guessing game 1-------------------------------------------------------------------------------
 
 secret_word = "candy"
 guess = ""
@@ -238,7 +242,7 @@ while guess != secret_word :
 print("You got it!")
 
 
----------------------------------------------------------------   # first game --- still broken :??------------------------------------------------------------------------
+----------------------------------------------------------------------------# first game --- still broken :??------------------------------------------------------------------------
                             
 question = input("WHY ARE YOU LITTERING? ")
 correct_answer = "I do not"
@@ -272,7 +276,7 @@ print("That's awesome!")
 
 
 
---------------------------------------------------------------------first game solved!!!!! :) ---------------------------------------------------------------------
+---------------------------------------------------------------------------first game solved!!!!! :) ---------------------------------------------------------------------
 
 
 question = input("WHY ARE YOU LITTERING? ")
@@ -306,7 +310,7 @@ while ans != correct_answer:
 
 
 
---------------------------------------------------------------------first game improved !!!!! :) ---------------------------------------------------------------------
+-------------------------------------------------------------------------first game improved !!!!! :) ---------------------------------------------------------------------
 
 
 question = input("WHY ARE YOU LITTERING? \n 1) I am stupid \n 2) My mummy still cleaning after me \n 3) Don't care \n "
@@ -342,7 +346,7 @@ while ans != correct_answer:
 
 
 
-----------------------------------------------------------# and some more changes---------------------------------------------------------------------------------
+--------------------------------------------------------------------------# and some more changes---------------------------------------------------------------------------------
 
 question = input("WHY ARE YOU LITTERING? \n 1) I am stupid \n 2) My mummy still cleaning after me \n 3) Don't care \n "
                  "4) All of the above \n ")
@@ -375,7 +379,7 @@ while ans != correct_answer:
         break
 
 
------------------------------------------------------------# for loop ---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------# for loop ---------------------------------------------------------------------------------------------
 
 for letter in "Giraffe Academy":                         # the word letter could actually be anything with the same result apparently, so it is a random word
     print(letter)                    
@@ -408,7 +412,7 @@ for anything in range(len(friends)):
 
 
 
----------------------------------------------------# exponent function -----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------# exponent function -----------------------------------------------------------------------------------------------
 
 
 print(2**5)                      # to cube a number 
@@ -424,7 +428,7 @@ def raise_to_power (base_num, pow_num):              # we create a function
 print(raise_to_power(4,6))                        # and in the print we specifie which numbers 
 
 
-----------------------------------------------------------# 2D lists ---------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------# 2D lists ---------------------------------------------------------------------------------------------------
 
                                              # it is actully lists inside lists
                                            
@@ -440,7 +444,7 @@ print(my_big_list[0][3])                # here we requested to print row zero, c
 
 
 
----------------------------------------------------------------# nested for loop ---------------------------------------------------------------------------------------
+------------------------------------------------------------------------# nested for loop ---------------------------------------------------------------------------------------
 
                                                               # which is actully a for loop inside a for loop
                                                               
@@ -464,7 +468,7 @@ print(my_big_list[0][3])                # here we requested to print row zero, c
                                                               
                                                               
                                                               
- -----------------------------------------------------# build a translator --------------------------------------------------------------------------------------                                                             
+ -----------------------------------------------------------------------# build a translator --------------------------------------------------------------------------------------                                                             
                                                               
                                                               
  def translate(phrase):                                             #  we define a function called translate 
@@ -499,19 +503,256 @@ print(translate(input("Enter a word or a phrase: ")))
                                                               
                                                               
                                                               
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
-                                                              
+ ------------------------------------------------------------------------# comments -----------------------------------------------------------------------------------------------
 
+
+# for comments we case either use #
+ 
+ oooor we can use '''  segjsldigj;rgiskglag;lsadkgalsdgdslgkl
+ 
+ kljgiejrgisjgklsjgkjsklgjsaklgjsgjsdgj
+ 
+ '''
+                                                              
+       so now we writh multiple lines of comments without the program executing them 
+       
+       
+       
+ ------------------------------------------------------------------------------# try except ----------------------------------------------------------------------------------
+
+ number= int(input("Enter a number: "))       # now we request the user to input a number
+ print(number + 12)                               # and we add 12 to that number
+ 
+                                                      # but if the user puts a string the program will break so we want to use the try except, which goes like that:
+                                                      
+ try:
+  number= int(input("Enter a number: "))                     
+  print(number + 12)                                # so now if the user inputs anything other than a number, the "ivalid text will apper instead of the program to crass
+except:
+    print("Invalind iput")                                                    
+                                                 
+                                            # the thing is that the except will catch any error that comes after try
+                                            # but we can make it except only a specific error
+                                                              
+                                                        # to do that, we can specify the error next to except so it will know what to catch
+                                                        
+                                                              
+                                                              
+    try:
+    division = 10/0
+    number= int(input("Enter a number: "))
+    print(number + 12)
+except ZeroDivisionError:                         # so here we specify the exact errors and we have an except for 1)ZeroDivisionError and 2) ValueError
+    print("Divided by 0")
+except ValueError:
+    print("Invalind iput")
+                                                          
+                                                              
+                    # we can also name the except and it would be :  except ZeroDivisionError as error
+            
+            
+try:
+    division = 10/0
+    number= int(input("Enter a number: "))
+    print(number + 12)
+except ZeroDivisionError as error:
+    print(error)
+except ValueError:
+    print("Invalind iput")
+                                                              
+                                                              
+------------------------------------------------------------------# reading files -----------------------------------------------------------------------------------
+
+
+# to open a file we use the commant open()
+
+open("name_or_path_of_the_file, "mode")              # so we put to things in the open commant. one is the name or path of the file and the second is the mode that we 
+                                                        want to open the file. 
+                                                      #  So is we just want to read the file we would put "r"
+                                                      
+ open("name_of_file", "w")                               # we can also use "w" which means write and we use it to change information in the file                        
+
+
+ open("name_of_file", "a")                               # we can also use "a" which means append  and we use it to add information in the end of that file                 
+
+
+ open("name_of_file", "r+")                             # we can also use "r+" which means to both read and write in that file that we are opening                  
+
+
+
+           
+ 
+ 
+ 
+                                                        # we usually want to store the open command in a value:
+                             
+                             
+ employ_ID = open("file_name", "r")                                    
+                                            
+                                            # and after we are done, to close the file that we opened: 
+                                            
+file_name.close()                                                                                                                                                                                
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                     # to access the information in the file :
+                                                     
+
+ employ_ID = open("file_name", "r")  
+ 
+ print(emoloy_ID.readable)                           # and with that we basicaly receive a True or False where the program informs us if we are able to read the file or not
+                                                            # if the mode was set to "w" we would not be able to read the file, just write in it.
+                                                            # if the mode was set to "r+" we would be able to both read and write the file
+                                                            # if we wanted to read the file we would use the read function:
+                                                            
+
+employ_ID = open("file_name", "r")  
+ 
+ print(emoloy_ID.read())                           # and now it will spit out all the info from the file
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                         # we can also use specific lines in the file
+                                                         
+                                                         
+  employ_ID = open("file_name", "r")  
+                                                   # so now it is going to read the first line
+ print(emoloy_ID.readline())                                                                                                                                                                                                 
+                                                                                                                                                                                                  
+                                                   # if we want to read the second line:                                                                                                                                                
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+employ_ID = open("file_name", "r")  
+print(emoloy_ID.readline())                                                                                                                                                                                              
+print(emoloy_ID.readline())                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                      # we can also use a singe function to read all the lines:                                                                                                                                           
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+employ_ID = open("file_name", "r")  
+print(emoloy_ID.readlines())                         # so with the readlines  it spits out all the lines in the file in order                                                                                                                                                                     
+                                                                                                                                                                                               
+                                                                                                                                                                                                                                
+                                                              # and if want to just see a spesific line in the file we are going to need to specify the index of the line:
+                                                              
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+employ_ID = open("file_name", "r")  
+print(emoloy_ID.readlines()[3])                  # we spesify the index 3, which will bring the 4th line ( because it starts indexing at 0)                                                                                                                                                                           
+                                                                                                                                                                                               
+                                                                                                                                                                                                                              
+                                                  # and we can use it with a for loop so it will bring all the lines
+                                                  
+                                                                                                                                                                                                  
+employee_ID = open("file_name.txt","r")
+for employee_ID in employee_ID.readlines():
+    print(employee_ID)
+employee_ID.close()                                                                                                                                                                                                 
+                                                                                                                                                                                                  
+                           
+                           
+------------------------------------------------------------------# write files -----------------------------------------------------------------------------------                                                                                                                                                                                     
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                  
+
+
+
+
+
+
+                                                                                                                                                                     
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+
+
+
+                                                                                                                                                                     
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                         
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                              
