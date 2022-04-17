@@ -654,63 +654,129 @@ employee_ID.close()
 ------------------------------------------------------------------# write files -----------------------------------------------------------------------------------                                                                                                                                                                                     
                                                                                                                                                                                                   
                                                                                                                                                                                                   
+employee_ID = open("file_name.txt","a")         # we are using append in order to add new text in the end of the file 
+employee_ID.write(Maria - Trainer)                   # also if I want my entry to go on a new line, I can write \nMaria - Trainer
+    
+employee_ID.close()                                                                                                                                                                                                    
                                                                                                                                                                                                  
                                                                                                                                                                                                  
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
+employee_ID = open("file_name.txt","w")         # we are using write in order to add new text, but if we run it, it will overrid all existing entries in the file
+employee_ID.write(Maria - Trainer)                   
+    
+employee_ID.close()                                                                                                                                                                                                  
                                                                                                                                                                                                                                                                                                                                                     
+                                                   # we can also use write to create a new file                                                                                                                                              
+                                                                                                                                                                                                 
+employee_ID = open("file_name1.txt","w")           # so na we are creating a new file with name file_name1 
+employee_ID.write(Maria - Trainer)                   
+employee_ID.close()                                                                                                                                                                                                
+                                                                                                                                                                                                 
+                                                    # if we cant to create a website we are going to need to put                                                                                                                                              
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+employee_ID = open("index.html","w")                                                                                                                                                                                                
+employee_ID.write("<p>This is HTML</p>")             #!!!!!# this is just an example!!!                                                                                                                                                                                  
                                                                                                                                                                                                  
                                                                                                                                                                                                  
                                                                                                                                                                                                  
+------------------------------------------------------------# Modules ---------------------------------------------------------------------------------------------------
+  
+  
+  
+                                                                                                                                                                                                 
+                                                 # module is actully any external python file
+                                                 https://docs.python.org/3/py-modindex.html python module library
+                                                           
+                                                           
+                                                      # we can import a file - like a file that we have stored code with usefull functions                                                                                                                                                                                                                                                                                                                                           
+                                                            to do that we go to the beggining and type:                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                 
+import name_of_the_file                                                                                                                                                                                                
+print(name_of_the_file.thefuction_thatIwantfrom_thatfile)              #  it is like linking the two files, so in the currect file, we are able to use stuff from another file                                                                                                                                                                                           
                                                                                                                                                                                                  
                                                                                                                                                                                                  
                                                                                                                                                                                                  
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                 
-                                                                                                                                                                                                  
+-------------------------------------------------------------------# Pip ---------------------------------------------------------------------------------------------------
+                                       
+                                      # we use pip to install python modules   -- package manager ( helps install - manage - update - uninstall different python modules                                                                                                                                               
+                           # to install the python modules with pip, we need to open the command in windows and write the pip install the_name_of_the_module_file as it is instructed 
+                           from the source we are downloading the module                                                                                                                                                                       
+                                         
+                                   # to uninstall, we use exactly the same, but with uninstall this time : pip uninstall .....
+                                                                                                                                    
+                                                                                                                                    
+-------------------------------------------------------------------# Classes & Objects ---------------------------------------------------------------------------------------------------
+                                                   
+                                                   # used to create datatypes - so we can create any datatype we want
+                                                   
+                                                   # we will create the datatype with the class which is going to outline the datatype
+                                                   # and the object will be the actuall item - datatype
+      
+ 
+class Student:
 
 
+    def __init__(self, name, major, gpa, is_on_probation):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+        self.is_on_probation = is_on_probation                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                        # now we can go to another file and:
+                                        
 
+
+from student import student                             # we imported the student class that we created 
+student1 = student("Jim", "Biology", 3.6, False)        # we gave it attributes - so we created an object 
+print(student1.gpa)                                     # and we can now print which ever attribute we want for that object
 
 
 
                                                                                                                                                                      
+  --------------------------------------------------------# Building a multiple choice quiz ---------------------------------------------------------------------------------------------------
+                                                                                                                                                                                                
+                                                          # first I created a new file where I created a class
+                                                          
+                                                          
+ class Questions:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer                                                                                                                                                                                                 
+                                                         # then imported the class into my main file/project                                                                                                                                         
+                                                                                                                                                                                                  
+                                                                                                                                                                                                  
+    from questions import Questions
+
+question_prompts = [
+    "What is the best desert? \n(a) Icecream\n(b) Chocolate\n(c) Fruit\n\n",
+    "What is the best fruit? \n(a) Banana\n(b) Strawberry\n(c) Apple\n\n",
+    "What is the best snack? \n (a) Chips\n(b) Popcorn\n(c) Zolitas\n\n"
+]
+
+questions = [
+    Questions(question_prompts[0], "b"),
+    Questions(question_prompts[1], "a"),
+    Questions(question_prompts[2], "c")
+]
+
+
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer == question.answer:
+            score += 1
+    print("You got " + str(score) + " out of " + str(len(questions)) + "!\nKudos!")
+
+input("Wanna Play a qame?")
+input("Oook, here we go!\nLet's see if you get any of that right ;)\n\n ")
+run_test(questions)                                                                                                                                                                                              
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
+-------------------------------------------------------------------# Object Functions ---------------------------------------------------------------------------------------------------
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                  
