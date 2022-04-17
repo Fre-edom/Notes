@@ -424,6 +424,94 @@ def raise_to_power (base_num, pow_num):              # we create a function
 print(raise_to_power(4,6))                        # and in the print we specifie which numbers 
 
 
-----------------------------------------------------------
+----------------------------------------------------------# 2D lists ---------------------------------------------------------------------------------------------------
 
+                                             # it is actully lists inside lists
+                                           
+
+my_big_list = [                            # we created a list and put lists inside
+     [1,2,3,4],
+     [5,6,7,8],
+     [9,10,11,12],                        # so we have 4 rows and 4 columns.
+     [13]
+]
+
+print(my_big_list[0][3])                # here we requested to print row zero, column 3 and this would print the number 4
+
+
+
+---------------------------------------------------------------# nested for loop ---------------------------------------------------------------------------------------
+
+                                                              # which is actully a for loop inside a for loop
+                                                              
+                                                              
+                                                              
+  my_big_list = [                           
+    [1,2,3,4],                                               # we are going to use the 2D list
+    [5,6,7,8],
+    [9,10,11,12], 
+    [13]
+]                                                          
+                                                              
+                                                              
+      for row in my_big_list:                             #  with this for loop we are going to prin all the rows, as they appear in the 2D list
+     print(row)                                                        
+                                                              
+                                                              
+  for row in my_big_list:                                    # and now with the for loop inside the for loop ( = nested for loop) we print all the elements of all the lists inside our list
+     for col in row:
+      print(col)                                                            
+                                                              
+                                                              
+                                                              
+ -----------------------------------------------------# build a translator --------------------------------------------------------------------------------------                                                             
+                                                              
+                                                              
+ def translate(phrase):                                             #  we define a function called translate 
+     translation = " "
+     for letter in phrase:                                                # we create a for loop where for each letter that is a vowel, we replace it with a g
+          if letter in "AEIOUaeiou":
+               translation = translation + "g"
+          else:
+               translation = translation + letter                # if there is no vowel, we just return the word or phrase as it is
+     return translation
+
+print(translate(input("Enter a word or a phrase: ")))              # we print the translation and request for the user to input a word or phrase
+
+
+
+
+                                                       # translator a bit better and a bit more complex
+                                                       
+
+def translate(phrase):
+     translation = " "                                   # to change upper and lower case letters
+     for letter in phrase:
+          if letter in "aeiou":
+              translation = translation + "g"
+          elif letter in "AEIOU":
+                translation = translation + "G"
+          else:
+               translation = translation + letter
+     return translation
+
+print(translate(input("Enter a word or a phrase: ")))
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
 
