@@ -31,12 +31,16 @@ break      except     in         raise
       *               Multiplication                          - Parentheses are always respected                   |   Power                                                                                                                                 
       /               Division                                - Exponentiation(raise to power)                     |   Multiplication                                                                                                                 
       **              Power                                   - Miltiplication, Devision, Remainder                |   Addition                                                                                                                        
-      %              Remainder                               - Addition and Substraction                           |   Left to Right                                                                                                            
+      %              Remainder                                - Addition and Substraction                          |   Left to Right                                                                                                            
                                                               - Left to right                                     \ /                                                                                         
                                                                                                                                                                                                 
                                                                                                                                                                                                 
                                                                                                                                                                                                 
-                                                                                                                                                                                                
+# with print(tupe(the_name_of_the_value)  we are able to see what class (datatype) the value is
+so if :
+
+x = 10
+print(type(x)  ----> the result will be <class 'int'>
                                                                                                                                                                                                 
                                                                                                                                                                                                 
                                                                                                                                                                                                 
