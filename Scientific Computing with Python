@@ -6,27 +6,33 @@ FreeCodeCamp                                                      Scientific Com
 
 
 
------------------------------------------------------------------------------# Notes ---------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------# Reserved Words ---------------------------------------------------------------------------------------------------
                                                                                                                                                                                      
+                      # ** You cannot use them as variable banes/identifiers                                                                                                                                                                          
+                                                                                                                                                                                                
+                                                                                                                                                                                                
+False     class      return      is         finally                                                                                                                                                                                                
+None       if        for        lambfa      continue           
+True       def       from        while       nonlocal        
+and        del       global      not         with
+as         elif       try        or          yield     
+assert     else      import      pass
+break      except     in         raise                          
                                                                                                                                                                                                 
                                                                                                                                                                                                 
                                                                                                                                                                                                 
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
-                                                                                                                                                                                                
+-----------------------------------------------------------------------------# Numeric Expressions ---------------------------------------------------------------------------------------------------
+                                                                                                                                                                                               
+                                                          # When we string operators together - Python much know which one to do first                                                                                                                                                                    
+  # Operator       Operation                                   # This is called "operator precedence"                                         
+                                                                     ## Highest precedence rule to lowest precedence rules:                                                                                                                                                                 
+      +               addition                                  
+      -               Substraction                                                                                 |   Parenthesis                                                                                                                                            
+      *               Multiplication                          - Parentheses are always respected                   |   Power                                                                                                                                 
+      /               Division                                - Exponentiation(raise to power)                     |   Multiplication                                                                                                                 
+      **              Power                                   - Miltiplication, Devision, Remainder                |   Addition                                                                                                                        
+      %              Remainder                               - Addition and Substraction                           |   Left to Right                                                                                                            
+                                                              - Left to right                                     \ /                                                                                         
                                                                                                                                                                                                 
                                                                                                                                                                                                 
                                                                                                                                                                                                 
