@@ -170,15 +170,35 @@ print(counts.values())
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
+counts = {"name" :"Josh","age":12,"male": False}            # to print the all items in the dictionary
+print(counts.items())
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                  
+counts = {"name" :"Josh","age":12,"male": False}      # to print two iteration items ( it will give both values and keys for all pairs in the dictionary)
+for aa,bb in counts.items():
+  print(aa,bb)                                                                                                                                                                                                  
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
-                                                                                                                                                                                                  
+name = input("Enter a file name:")         # opens file with input
+handle = open(name)
+
+counts = dict()
+for line in handle:
+    words = line.split()
+    for word in words:
+        counts[word] = counts.get(word,0) +1
+
+bigcount = None
+bigword = None
+for word,count in counts.items():                               # to find the biggest one
+    if bigcount is None or count > bigcount:
+        bigcount = word
+        bigcount = count
+
+print(bigword,bigcount)                                                                                                                                                                                              
                                                                                                                                                                                                   
                                                                                                                                                                                                   
                                                                                                                                                                                                   
