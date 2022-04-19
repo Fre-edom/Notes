@@ -78,10 +78,11 @@ s.strip()   --> white space on both left and right of the string
                                                                                                                                                                                               
                                # code for counting the number of lines in a file
                                
-my_file = open(katikati.txt)
+f = open("my_file.py","r")
 count = 0
-for k in my_file:                                                    
-count = my_file.read()
+for line in f:
+    count = f.read()
+    print(count)
 print(len(count))
 
 
@@ -96,21 +97,40 @@ print(count[ : ])                   # to read from start to the end ( if it was 
                                                                                                                                                                                               
                                                                                                                                                                                               
                                                                                                                                                                                               
+my_file = open(katikati.txt)
+for kkk in my_file:                       # code to print only lines that starts with Nice
+    if kkk.startswith('Nice'):
+        print(kkk)                                                                                                                                                                                             
                                                                                                                                                                                               
                                                                                                                                                                                               
                                                                                                                                                                                               
+f = open("my_file.py","r")            # to open and read specific lines but without any white space or empty lines ( lines that only include \n)
+for line in f:
+    line = line.rstrip()
+    if line.startswith("When"):
+        print(line)                                                                                                                                                                                           
                                                                                                                                                                                               
                                                                                                                                                                                               
                                                                                                                                                                                               
+if not line.startswith("Ship"):      # to skip specific lines and print only the lines we want
+      continue
+      print(" ", line)                                                                                                                                                                                       
+                            
+                            #or
+                            
+if not "Ship" in line:
+    continue
+    print(" ", line)
                                                                                                                                                                                               
-                                                                                                                                                                                              
-                                                                                                                                                                                              
-                                                                                                                                                                                              
-                                                                                                                                                                                              
-                                                                                                                                                                                              
-                                                                                                                                                                                              
-                                                                                                                                                                                              
-                                                                                                                                                                                              
+                                    # to open a file with input                                                                                                                                                        
+                                                                                                                                                                             
+f = input("Enter a file name: ")                
+try:
+    ff = open(f)                                # we use try statement in case the input is invalind
+except: 
+    print("File name not valid ",f )        
+    quit()                                # we ended with "quit()" statement so it will continue on and not cause issues letter on with the invalid file
+                                                                                                                                                                                          
                                                                                                                                                                                               
                                                                                                                                                                                               
                                                                                                                                                                                               
