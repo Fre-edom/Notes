@@ -1,0 +1,233 @@
+                    |     https://www.youtube-nocookie.com/embed/XKHEtdqhLK8?playlist=XKHEtdqhLK8&autoplay=1&iv_load_policy=3&loop=1&modestbranding=1&start= |
+                   /__________________________________________________________________________________________________________________________________________\
+
+
+
+
+----------------------------------------------------- Strig Functions -----------------------------------------------------------------------------------------------------
+
+name = "Eleftheria"
+
+print(len(name))       # ---> for str length
+print(type(name))            # ---> for value type
+print(name.find("e"))         # ---> to find the position  of a char in the str
+print(name.capitalize())    # ---> to capitalize the first letter
+print(name.lower())        # ---> make all char lower
+print(name.upper())      # ---> make all char upper
+print(name.isdigit())      # --> returns True or False
+print(name.isalpha())  # --> to check if there are only alphanumeric char -- if there is a space it will return False
+print(name.count("ria"))    # --> to count how many char in the str
+print(name.replace("e", "a")) # --> to replace a char with another char everywhere in the str
+print(name*3)    # --> will print the str times the number we want
+
+
+------------------------- Str slicing 
+# slicing = create a substring by extracting elements from another string
+#           indexing[] or slice()
+#           [start:stop:step]
+
+name = "Bro Code"
+
+first_name = name[:3]       # [0:3]
+last_name = name[4:]        # [4:end]
+funky_name = name[::2]      # [0:end:2]
+reversed_name = name[::-1]  # [0:end:-1]
+
+print(reversed_name)
+
+website1 = "http://google.com"
+website2 = "http://wikipedia.com"
+
+slice = slice(7,-4)
+
+print(website1[slice])
+print(website2[slice])
+
+------------------------------------------------------------Int functions----------------------------------------------------------------------------------------------------------
+
+import math
+
+pi = 3.14
+x = 1
+y = 2
+z = 3
+ 
+print(round(pi))    # --> it rounds  the float number
+print(math.ceil(pi))     # --> it rounds up
+print(math.floor(pi))    # ---> it rounds down
+print(abs(pi)) # --> for the absolute value of the number ( = how far is from 0 )
+print(pow(pi, 3))    # --> raises to power - first we put the value we want( in this case pi, and then the power)
+print(math.sqrt(pi)) # --> for square root
+print(max(x, y, z))  # --> find the max value
+print(min(x, y, z))   # ---> find the min value
+
+
+------------------------------------------------------------Logical Operators ----------------------------------------------------------------------------------------------------------
+
+
+
+Pinned by Bro Code
+Bro Code
+1 year ago
+# logical operators (and,or,not) = used to check if two or more conditional statements is true
+
+temp = int(input("What is the temperature outside?: "))
+
+if temp >= 0 and temp <= 30:
+    print("the temperature is good today!")
+    print("go outside!")
+elif temp < 0 or temp > 30:
+    print("the temperature is bad today!")
+    print("stay inside!")
+    
+    
+    
+    # to use operator "not" :
+    
+if not(temp >= 0 and temp <= 30):
+    print("the temperature is good today!")
+    print("go outside!")
+
+------------------------------------------------------------For loop + sleep ----------------------------------------------------------------------------------------------------------
+
+
+# for loop =    a statement that will execute it's block of code
+#                      a limited amount of times
+#
+#                     while loop = unlimited
+#                     for loop = limited
+
+import time
+
+#for i in range(10):
+    #print(i+1)
+
+#for i in range(50,100+1,2):
+    #print(i)
+
+#for i in "Bro Code":
+    #print(i)
+
+for seconds in range(10,0,-1):
+    print(seconds)
+    time.sleep(1)
+print("Happy New Year!")
+
+------------------------------------------------------------Nested loops ----------------------------------------------------------------------------------------------------------
+
+
+
+# nested loops =    The "inner loop" will finish all of it's iterations before
+#                   finishing one iteration of the "outer loop"
+
+rows = int(input("How many rows?: "))
+columns = int(input("How many columns?: "))
+symbol = input("Enter a symbol to use: ")
+
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end="")
+    print()
+    
+    
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+# Loop Control Statements = change a loops execution from its normal sequence
+
+# break =       used to terminate the loop entirely
+# continue =    skips to the next iteration of the loop.
+# pass =        does nothing, acts as a placeholder
+
+while True:
+    name = input("Enter your name: ")
+    if name != "":
+        break
+
+phone_number = "123-456-7890"
+for i in phone_number:
+    if i == "-":
+        continue
+    print(i, end="")
+
+for i in range(1,21):
+    if i == 13:
+        pass
+    else:
+        print(i)
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+--------------------------------------------------------- Loop control statements ----------------------------------------------------------------------------------------------------------
+
+
+
