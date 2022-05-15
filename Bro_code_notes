@@ -602,7 +602,23 @@ else:
 
 --------------------------------------------------------- Modules  ----------------------------------------------------------------------------------------------------------
 
+# module = a file containing python code. May contain functions, classes etc.
+# used with modular programming, which is to separate a program into paths
 
+import messages as msg      ---> to import the whole modulefinde
+
+msg.hello()
+msg.by()
+
+from messages improt hello, bye --> to import specific functions
+from messages import * --> to import everything
+
+hello()
+bye()
+
+
+**************************************************
+help("modules")         ---> this will populate the list of all the available modules for python
 
 
 
