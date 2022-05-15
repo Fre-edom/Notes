@@ -1604,7 +1604,17 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- GUI windows  ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
 
+window = Tk() #instantiate an instance of a window
+window.geometry("420x420")
+window.title("Bro Code first GUI program")
+
+icon = PhotoImage(file='logo.png')
+window.iconphoto(True,icon)
+window.config(background="#5cfcff")
+
+window.mainloop() #place window on computer screen, listen for events
 
 
 
@@ -1612,7 +1622,29 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Labels ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
 
+# label = an area widget that holds text and/or an image within a window
+
+window = Tk()
+
+photo = PhotoImage(file='person.png')
+
+label = Label(window,
+              text="bro, do you even code?",
+              font=('Arial',40,'bold'),
+              fg='#00FF00',
+              bg='black',
+              relief=RAISED,
+              bd=10,
+              padx=20,
+              pady=20,
+              image=photo,
+              compound='bottom')
+label.pack()
+#label.place(x=0,y=0)
+
+window.mainloop()
 
 
 
@@ -1620,25 +1652,192 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Buttons ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
+
+# button = you click it, then it does stuff
+
+count = 0
+
+def click():
+    global count
+    count+=1
+    print(count)
+
+window = Tk()
+
+photo = PhotoImage(file='like.png')
+
+button = Button(window,
+                text="click me!",
+                command=click,
+                font=("Comic Sans",30),
+                fg="#00FF00",
+                bg="black",
+                activeforeground="#00FF00",
+                activebackground="black",
+                state=ACTIVE,
+                image=photo,
+                compound='bottom')
+button.pack()
+
+window.mainloop()
 
 
+--------------------------------------------------------- GUI buttons  ----------------------------------------------------------------------------------------------------------
 
+# button = you click it, then it does stuff
 
+from tkinter import *
 
+count = 0
+
+def click():
+    global count
+    count+=1
+    label.config(text=count)
+    #label2.pack()
+
+window = Tk()
+button = Button(window,text='Click me!!!')
+button.config(command=click) #performs call back of function
+button.config(font=('Ink Free',50,'bold'))
+button.config(bg='#ff6200')
+button.config(fg='#fffb1f')
+button.config(activebackground='#FF0000')
+button.config(activeforeground='#fffb1f')
+image = PhotoImage(file='point_emoji.png')
+button.config(image=image)
+button.config(compound='bottom')
+#button.config(state=DISABLED) #disabled button (ACTIVE/DISABLED)
+label = Label(window,text=count)
+label.config(font=('Monospace',50))
+label.pack()
+button.pack()
+label2 = Label(window,image=image)
+window.mainloop()
 
 --------------------------------------------------------- Entrybox ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
 
+#entry widget = textbox that accepts a single line of user input
 
+def submit():
+    username = entry.get()
+    print("Hello "+username)
 
+def delete():
+    entry.delete(0,END)
 
+def backspace():
+    entry.delete(len(entry.get())-1, END)
+
+window = Tk()
+
+entry = Entry(window,
+              font=("Arial",50),
+              fg="#00FF00",
+              bg="black")
+
+#entry.insert(0,'Spongebob')
+#entry.config(show="*")
+#entry.config(state=DISABLED)
+
+entry.pack(side=LEFT)
+
+submit_button = Button(window,text="submit",command=submit)
+submit_button.pack(side=RIGHT)
+
+delete_button = Button(window,text="delete",command=delete)
+delete_button.pack(side=RIGHT)
+
+backspace_button = Button(window,text="backspace",command=backspace)
+backspace_button.pack(side=RIGHT)
+
+window.mainloop()
 
 
 
 
 --------------------------------------------------------- Checkbox ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
 
+def display():
+    if(x.get()==1):
+        print("You agree!")
+    else:
+        print("You don't agree :(")
+
+window = Tk()
+
+x = IntVar()
+
+python_photo = PhotoImage(file='Python.png')
+
+check_button = Checkbutton(window,
+                           text="I agree to something",
+                           variable=x,
+                           onvalue=1,
+                           offvalue=0,
+                           command=display,
+                           font=('Arial',20),
+                           fg='#00FF00',
+                           bg='black',
+                           activeforeground='#00FF00',
+                           activebackground='black',
+                           padx=25,
+                           pady=10,
+                           image=python_photo,
+                           compound='left')
+check_button.pack()
+
+
+window.mainloop()
+
+--------------------------------------------------------- GUI Checkbox ----------------------------------------------------------------------------------------------------------
+
+from tkinter import *
+
+def display():
+    if(x.get()==1)&(y.get()==0):
+        print("I like Python")
+    elif(x.get()==0)&(y.get()==1):
+        print("I like Java")
+    elif(x.get()==1)&(y.get()==1):
+        print("I like both Python & Java")
+    else:
+        print("I don't like either")
+
+window = Tk()
+
+x = IntVar()
+y = IntVar()
+
+checkbox = Checkbutton(window,text='Python',variable=x,onvalue=1,offvalue=0,command=display)
+checkbox.pack()
+checkbox.config(font=('Arial',20)) #changes the font
+checkbox.config(fg='#00FF00') #foreground color
+checkbox.config(bg='#000000') #background color
+checkbox.config(activeforeground='#0000FF') #active foreground color
+checkbox.config(activebackground='#000000') #active background color
+photo = PhotoImage(file='python_logo.png')
+checkbox.config(image=photo,compound='left') #sets image to photoimage
+checkbox.config(padx=25,pady=10,width=250,height=50)
+checkbox.config(anchor='w') #anchors widget to relative cardinal direction
+
+checkbox2 = Checkbutton(window,text='Java',variable=y,onvalue=1,offvalue=0,command=display)
+#checkbox2.pack()
+checkbox2.config(font=('Arial',20)) #changes the font
+checkbox2.config(fg='#0000FF') #foreground color
+checkbox2.config(bg='#000000') #background color
+checkbox2.config(activeforeground='#0000FF') #active foreground color
+checkbox2.config(activebackground='#000000') #active background color
+photo2 = PhotoImage(file='Java_logo.png')
+checkbox2.config(image=photo2,compound='left') #sets image to photoimage
+checkbox2.config(padx=25,pady=10,width=250,height=50)
+checkbox2.config(anchor='w')
+window.mainloop()
 
 
 
@@ -1648,6 +1847,48 @@ answer = input("Do you wish to exit?")
 --------------------------------------------------------- Radio buttons ----------------------------------------------------------------------------------------------------------
 
 
+Pinned by Bro Code
+Bro Code
+1 year ago
+# radio button = similar to checkbox, but you can only select one from a group
+from tkinter import *
+
+food = ["pizza","hamburger","hotdog"]
+
+def order():
+    if(x.get()==0):
+        print("You ordered pizza!")
+    elif(x.get()==1):
+        print("You ordered a hamburger!")
+    elif(x.get()==2):
+        print("You ordered a hotdog!")
+    else:
+        print("huh?")
+
+window = Tk()
+
+pizzaImage = PhotoImage(file='pizza.png')
+hamburgerImage = PhotoImage(file='hamburger.png')
+hotdogImage = PhotoImage(file='hotdog.png')
+foodImages = [pizzaImage,hamburgerImage,hotdogImage]
+
+x = IntVar()
+
+for index in range(len(food)):
+    radiobutton = Radiobutton(window,
+                              text=food[index], #adds text to radio buttons
+                              variable=x, #groups radiobuttons together if they share the same variable
+                              value=index, #assigns each radiobutton a different value
+                              padx = 25, #adds padding on x-axis
+                              font=("Impact",50),
+                              image = foodImages[index], #adds image to radiobutton
+                              compound = 'left', #adds image & text (left-side)
+                              #indicatoron=0, #eliminate circle indicators
+                              #width = 375, #sets width of radio buttons
+                              command=order #set command of radiobutton to function
+                              )
+    radiobutton.pack(anchor=W)
+window.mainloop()
 
 
 
@@ -1656,7 +1897,43 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Scale ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
 
+def submit():
+    print("The temperature is: "+ str(scale.get())+ " degrees C")
+
+window = Tk()
+
+hotImage = PhotoImage(file='hot.png')
+hotLabel = Label(image=hotImage)
+hotLabel.pack()
+
+scale = Scale(window,
+              from_=100,
+              to=0,
+              length=600,
+              orient=VERTICAL, #orientation of scale
+              font = ('Consolas',20),
+              tickinterval = 10, #adds numeric indicators for value
+              #showvalue = 0, #hide current value
+              resolution = 5, #increment of slider
+              troughcolor = '#69EAFF',
+              fg = '#FF1C00',
+              bg = '#111111'
+
+              )
+scale.set(((scale['from']-scale['to'])/2)+scale['to']) #set current value of slider
+
+scale.pack()
+
+coldImage = PhotoImage(file='cold.png')
+coldLabel = Label(image=coldImage)
+coldLabel.pack()
+
+button = Button(window,text='submit',command=submit)
+button.pack()
+
+window.mainloop()
 
 
 
@@ -1664,7 +1941,64 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Listbox ----------------------------------------------------------------------------------------------------------
 
+# listbox = A listing of selectable text items within it's own container
 
+def submit():
+
+    food = []
+
+    for index in listbox.curselection():
+        food.insert(index,listbox.get(index))
+
+    print("You have ordered: ")
+    for index in food:
+        print(index)
+
+def add():
+    listbox.insert(listbox.size(),entryBox.get())
+    listbox.config(height=listbox.size())
+
+def delete():
+    for index in reversed(listbox.curselection()):
+        listbox.delete(index)
+
+    listbox.config(height=listbox.size())
+
+from tkinter import *
+
+window = Tk()
+
+listbox = Listbox(window,
+                  bg="#f7ffde",
+                  font=("Constantia",35),
+                  width=12,
+                  selectmode=MULTIPLE)
+listbox.pack()
+
+listbox.insert(1,"pizza")
+listbox.insert(2,"pasta")
+listbox.insert(3,"garlic bread")
+listbox.insert(4,"soup")
+listbox.insert(5,"salad")
+
+listbox.config(height=listbox.size())
+
+entryBox = Entry(window)
+entryBox.pack()
+
+frame = Frame(window)
+frame.pack()
+
+submitButton = Button(frame,text="submit",command=submit)
+submitButton.pack(side=LEFT)
+
+addButton = Button(frame,text="add",command=add)
+addButton.pack(side=LEFT)
+
+deleteButton = Button(frame,text="delete",command=delete)
+deleteButton.pack(side=LEFT)
+
+window.mainloop()
 
 
 
@@ -1673,6 +2007,49 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Messagebox ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
+from tkinter import messagebox #import messagebox library
+
+def click():
+    #messagebox.showinfo(title='This is an info message box',message='You are a person')
+    #messagebox.showwarning(title='WARNING!',message='You have A VIRUS!!!!')
+    #messagebox.showerror(title='ERROR!',message='something went wrong :(')
+
+    #if messagebox.askokcancel(title='ask ok cancel',message='Do you want to do the thing?'):
+        #print('You did a thing!')
+    #else:
+        #print('You canceled a thing! :(')
+
+    #if messagebox.askretrycancel(title='ask ok cancel',message='Do you want retry the thing?'):
+        #print('You retried a thing!')
+    #else:
+        #print('You canceled a thing! :(')
+
+    #if messagebox.askyesno(title='ask yes or no',message='Do you like cake?'):
+        #print('I like cake too :)')
+    #else:
+        #print('Why do you not like cake? :(')
+
+    #answer = messagebox.askquestion(title='ask question',message='Do you like pie?')
+    #if(answer == 'yes'):
+        #print('I like pie too :)')
+    #else:
+        #print('Why do you not like pie? :(')
+
+    #answer = messagebox.askyesnocancel(title=' Yes no cancel',message='Do you like to code?',icon='question')
+    #if(answer==True):
+        #print("You like to code :)")
+    #elif(answer==False):
+        #print("Then why are you watching a video on coding?")
+    #else:
+        #print("You have dodged the question ")
+
+window = Tk()
+
+button = Button(window,command=click,text='click me')
+button.pack()
+
+window.mainloop()
 
 
 
@@ -1682,7 +2059,19 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Colorchooser ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
+from tkinter import colorchooser
 
+def click():
+    color = colorchooser.askcolor()
+    colorHex = color[1]
+    window.config(bg=colorHex)
+
+window = Tk()
+window.geometry("420x420")
+button = Button(text='click me',command=click)
+button.pack()
+window.mainloop()
 
 
 
@@ -1691,7 +2080,26 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Text area ----------------------------------------------------------------------------------------------------------
 
+# text widget = functions like a text area, you can enter multiple lines of text
+from tkinter import *
 
+def submit():
+    input = text.get("1.0",END)
+    print(input)
+
+window = Tk()
+text = Text(window,
+            bg="light yellow",
+            font=("Ink Free",25),
+            height=8,
+            width=20,
+            padx=20,
+            pady=20,
+            fg="purple")
+text.pack()
+button = Button(window,text="submit",command=submit)
+button.pack()
+window.mainloop()
 
 
 
@@ -1701,7 +2109,22 @@ answer = input("Do you wish to exit?")
 
 --------------------------------------------------------- Open a file (file dialog) ----------------------------------------------------------------------------------------------------------
 
+from tkinter import *
+from tkinter import filedialog
 
+def openFile():
+    filepath = filedialog.askopenfilename(initialdir="C:\\Users\\Cakow\\PycharmProjects\\Main",
+                                          title="Open file okay?",
+                                          filetypes= (("text files","*.txt"),
+                                          ("all files","*.*")))
+    file = open(filepath,'r')
+    print(file.read())
+    file.close()
+
+window = Tk()
+button = Button(text="Open",command=openFile)
+button.pack()
+window.mainloop()
 
 
 
